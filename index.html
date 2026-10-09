@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ec">
+  <meta name="description" content="北京协和医院院区数字导览概念原型">
+  <title>协和 · 院区漫游</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="协和院区漫游首页">
+      <span class="brand-mark">协</span>
+      <span><strong>协和 · 院区漫游</strong><small>PEKING UNION MEDICAL COLLEGE HOSPITAL</small></span>
+    </a>
+    <nav class="top-nav" aria-label="主要导航">
+      <a href="./sources.html">资料与图片来源</a>
+    </nav>
+    <span class="edition-label">院区互动导览</span>
+  </header>
+
+  <main>
+    <section class="explorer" aria-label="互动院区地图">
+      <div class="map-column">
+        <div class="map-toolbar">
+          <div>
+            <span class="section-kicker">EXPLORE THE CAMPUS</span>
+            <h2>点一栋楼，开始探索</h2>
+          </div>
+        </div>
+
+        <div class="map-shell">
+          <div class="map-image-wrap" id="mapImageWrap">
+            <img class="map-image" id="mapImage" src="./卫星 新.jpeg" alt="北京协和医院院区未标注卫星俯瞰图，叠加独立的楼宇互动热点">
+            <div class="hotspots" id="hotspots" aria-label="地图上的楼宇热点"></div>
+            <div class="map-north"><span>↑</span> 北</div>
+            <div class="map-stamp">PUMCH<br><small>CAMPUS MAP</small></div>
+          </div>
+          <div class="map-legend">
+            <span><i class="legend-dot"></i>可探索楼宇</span>
+            <span class="legend-hint" id="mapHint">点击标记，查看楼宇概览</span>
+          </div>
+          <p class="satellite-note">底图为未标注卫星图；楼宇热点参考示意图和标注图初步对应，位置可继续校准。</p>
+        </div>
+      </div>
+
+      <aside class="detail-column" aria-live="polite">
+        <div class="detail-heading">
+          <span class="section-kicker">PLACE OVERVIEW</span>
+          <div class="detail-heading-actions">
+            <a class="people-entry-link" href="./people.html">
+              <span>人物专栏</span>
+              <strong>瓦檐载医魂 <i aria-hidden="true">↗</i></strong>
+            </a>
+            <span class="detail-count" id="detailCount">— <i>/ 07</i></span>
+          </div>
+        </div>
+        <div class="detail-card" id="detailCard">
+          <div class="detail-topline">
+            <span class="category-pill" id="detailCategory">开始探索</span>
+            <span class="detail-number" id="detailNumber">—</span>
+          </div>
+          <h2 id="detailTitle">选择一栋楼</h2>
+          <p class="detail-summary" id="detailSummary">点击卫星图上的圆点，这里会显示对应楼宇的名称与概览。</p>
+          <div class="detail-rule"></div>
+          <h3 id="detailSubhead">交互导览</h3>
+          <ul class="detail-points" id="detailPoints">
+            <li>选择地图上的编号标记</li>
+            <li>查看该楼的名称和内容简介</li>
+            <li>使用“下一处”继续浏览</li>
+          </ul>
+          <div class="verification-note"><span aria-hidden="true">✳</span><span id="verificationText">目前为概念原型，楼宇位置与历史资料请以院方信息核实。</span></div>
+          <button class="next-button" id="nextButton" type="button">探索下一处 <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="building-list-wrap">
+          <div class="building-list" id="buildingList" aria-label="楼宇列表"></div>
+        </div>
+      </aside>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <span>协和 · 院区漫游 <i>—</i> 概念设计原型</span>
+    <span class="footer-links">
+      <a href="./people.html">瓦檐载医魂｜协和百年人物志</a>
+      <a href="./sources.html">资料与图片来源</a>
+      <a href="https://www.pumch.cn/" target="_blank" rel="noreferrer">北京协和医院官网 ↗</a>
+    </span>
+  </footer>
+  <script src="./app.js"></script>
+</body>
+</html>

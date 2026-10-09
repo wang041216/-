@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ec">
+  <meta name="description" content="以人物故事连接协和老楼与百年医学史">
+  <title>瓦檐载医魂｜协和百年人物志</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./old-building.css">
+  <link rel="stylesheet" href="./people.css">
+</head>
+<body class="people-page">
+  <header class="topbar">
+    <a class="brand" href="./index.html" aria-label="返回院区导览">
+      <span class="brand-mark">协</span>
+      <span><strong>协和 · 院区漫游</strong><small>PEKING UNION MEDICAL COLLEGE HOSPITAL</small></span>
+    </a>
+    <nav class="top-nav" aria-label="主要导航">
+      <a href="./old-building.html">老楼地图</a>
+      <a class="people-nav-link active" href="./people.html"><span>人物专栏</span><strong>瓦檐载医魂</strong></a>
+      <a href="./sources.html">资料与图片来源</a>
+    </nav>
+  </header>
+  <main class="people-main">
+    <nav class="detail-breadcrumb" aria-label="面包屑导航">
+      <a href="./index.html">院区导览</a><span>／</span><span>瓦檐载医魂</span><span id="personBreadcrumb" hidden>／ 人物故事</span>
+    </nav>
+    <section id="peopleOverview" class="people-overview">
+      <div class="people-heading">
+        <div>
+          <p class="eyebrow"><span></span> PEOPLE · PLACE · MEDICAL HISTORY</p>
+          <h1>瓦檐载医魂<em>｜</em>协和百年人物志</h1>
+          <p class="people-lead">一栋老楼，一位大医，一段中国现代医学的起点。</p>
+        </div>
+        <p class="people-intro">从人物走进院史：每张人物卡片都连接一处老楼地图点位，也带出一段医学、教育或公共卫生记忆。</p>
+      </div>
+      <div class="people-grid" id="peopleGrid"></div>
+      <aside class="people-closing-note">
+        <span class="people-closing-mark" aria-hidden="true">✳</span>
+        <div>
+          <h2>每一份坚守，都值得被记住</h2>
+          <p>这里呈现的只是协和百年人物长卷中的几页。医学的传承不仅由杰出先行者写就，也来自一代代医务工作者在诊室、病房、实验室与课堂中的认真付出。每一份守护生命、求真求实的日常，都值得尊敬。</p>
+        </div>
+      </aside>
+      <p class="people-note">楼宇关联作为院史导览线索；涉及具体房间、任职地点或仍有争议的历史细节，页面会注明资料状态。</p>
+    </section>
+    <article id="personDetail" class="person-detail" hidden></article>
+  </main>
+  <footer class="page-footer">
+    <a href="./old-building.html">返回老楼地图 ↗</a>
+    <a href="./sources.html">查看资料与图片来源 ↗</a>
+  </footer>
+  <script src="./people.js"></script>
+</body>
+</html>

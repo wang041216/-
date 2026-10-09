@@ -1,0 +1,43 @@
+.sources-page { min-height: 100%; overflow-y: auto; }
+.sources-main { width: min(1020px, 90%); height: auto; min-height: calc(100dvh - 108px); flex: 1 0 auto; margin: 0 auto; padding: 24px 0 40px; }
+.sources-main .detail-breadcrumb { margin-bottom: 26px; }
+.sources-heading { max-width: 760px; margin-bottom: 34px; }
+.sources-heading .eyebrow { margin-bottom: 12px; }
+.sources-heading h1 { margin: 0; font-family: var(--serif); font-size: clamp(30px, 4vw, 44px); font-weight: 500; letter-spacing: .06em; }
+.sources-heading > p:last-child { margin: 12px 0 0; color: #737c70; font-family: var(--serif); font-size: 12px; line-height: 2; }
+.source-section { margin-top: 32px; }
+.source-section > h2 { margin: 0; padding-bottom: 10px; border-bottom: 1px solid #d8dbcf; font-family: var(--serif); font-size: 20px; font-weight: 600; }
+.source-section-intro { margin: 10px 0 17px; color: #83887c; font-family: var(--serif); font-size: 10px; line-height: 1.8; }
+.reference-list { display: grid; gap: 18px; }
+.reference-group h3 { margin: 0 0 8px; color: #64745a; font-family: var(--serif); font-size: 13px; font-weight: 600; }
+.reference-card { position: relative; display: flex; min-height: 62px; flex-direction: column; justify-content: center; gap: 5px; margin: 7px 0; padding: 10px 42px 10px 14px; border: 1px solid #dce0d3; background: rgba(255, 254, 249, .78); transition: border .2s, background .2s, transform .2s; }
+.reference-card:hover { transform: translateX(2px); border-color: #aab694; background: #fffef9; }
+.reference-card strong { color: #415a46; font-family: var(--serif); font-size: 12px; font-weight: 600; line-height: 1.6; }
+.reference-card span { color: #8b9185; font-size: 9px; }
+.reference-card i { position: absolute; top: 50%; right: 15px; transform: translateY(-50%); color: #748260; font-size: 17px; font-style: normal; }
+.image-credit-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.image-credit-card { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; padding: 12px; border: 1px solid #e0e1d7; background: rgba(255, 254, 249, .65); }
+.image-credit-card code { overflow-wrap: anywhere; color: #74805f; font-size: 9px; }
+.image-credit-card strong { color: #4e5e4e; font-family: var(--serif); font-size: 10px; font-weight: 600; line-height: 1.6; }
+.image-credit-card p { margin: 0; color: #868b80; font-size: 9px; line-height: 1.7; }
+.source-disclaimer { margin-top: 28px; padding: 14px 16px; border-left: 3px solid #9cac79; background: #eceee4; }
+.source-disclaimer strong { color: #566d4e; font-family: var(--serif); font-size: 12px; }
+.source-disclaimer p { margin: 6px 0 0; color: #788071; font-family: var(--serif); font-size: 10px; line-height: 1.9; }
+.sources-page .page-footer { justify-content: space-between; }
+.sources-page .page-footer a { color: #607659; font-size: 10px; }
+
+@media (max-width: 650px) {
+  .sources-main { width: 91%; padding: 14px 0 25px; }
+  .sources-main .detail-breadcrumb { margin-bottom: 18px; }
+  .sources-heading { margin-bottom: 24px; }
+  .sources-heading .eyebrow { font-size: 7px; }
+  .sources-heading h1 { font-size: 28px; }
+  .sources-heading > p:last-child { font-size: 10px; }
+  .source-section { margin-top: 24px; }
+  .source-section > h2 { font-size: 17px; }
+  .reference-card { min-height: 58px; padding: 8px 34px 8px 10px; }
+  .reference-card strong { font-size: 10px; }
+  .reference-card span { font-size: 8px; }
+  .image-credit-list { grid-template-columns: 1fr; }
+  .sources-page .page-footer { gap: 8px; }
+}

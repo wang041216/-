@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ec">
+  <meta name="description" content="北京协和老楼建筑群互动导览">
+  <title>老楼 · 协和院区漫游</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./old-building.css">
+</head>
+<body class="heritage-map-page">
+  <header class="topbar">
+    <a class="brand" href="./index.html" aria-label="返回院区导览">
+      <span class="brand-mark">协</span>
+      <span><strong>协和 · 院区漫游</strong><small>PEKING UNION MEDICAL COLLEGE HOSPITAL</small></span>
+    </a>
+    <a class="back-link" href="./index.html"><span aria-hidden="true">←</span> 返回院区地图</a>
+  </header>
+
+  <main class="heritage-main">
+    <section class="heritage-heading">
+      <div>
+        <p class="eyebrow"><span></span> A CENTURY OF MEMORY</p>
+        <h1>老楼 <em>·</em> 建筑群</h1>
+        <p class="heritage-lead">走进百年空间，在一砖一瓦间读懂协和。</p>
+      </div>
+      <div class="map-instruction"><span class="instruction-number">01</span><span>点击地图上的楼号<br>探索一处建筑记忆</span></div>
+    </section>
+
+    <section class="heritage-explorer" aria-label="老楼建筑群互动卫星图">
+      <div class="heritage-map-panel">
+        <div class="heritage-map-frame">
+          <div class="heritage-map-canvas">
+            <img class="heritage-map-image" src="./老楼/老楼（新）.jpeg" alt="北京协和老楼建筑群卫星图">
+            <div class="heritage-hotspots" id="heritageHotspots" aria-label="可探索建筑点位"></div>
+          </div>
+          <span class="heritage-north" aria-hidden="true">↑ 北</span>
+          <span class="heritage-map-tag">THE OLD CAMPUS</span>
+        </div>
+        <div class="heritage-map-caption">
+          <span><i></i> 可探索地点</span>
+          <span>A–P 楼点位参照总平面图</span>
+        </div>
+        <p class="map-location-note" id="mapLocationNote" aria-live="polite" hidden></p>
+      </div>
+
+      <aside class="heritage-intro">
+        <span class="section-kicker">DISCOVER THE OLD CAMPUS</span>
+        <h2>一处院落，<br>多重记忆。</h2>
+        <p>东单三条九号，原址与清代豫亲王府相关。协和建筑群于 1917 年奠基、1921 年落成；此后院区继续扩展。点选卫星图上的 A–P 楼标记，走进不同空间的医学与校园故事。</p>
+        <p class="architecture-note">一期建筑将传统屋顶外观与现代医疗、实验功能并置；二期 O、P 楼则呈现不同的建筑表达。沿屋顶、开窗与空间功能观察，可以读出院区扩建过程中的建筑选择。</p>
+        <div class="heritage-timeline">
+          <div><span>1915—1916</span><p>购置协和医学堂及东单三条胡同原豫王府地产</p></div>
+          <div><span>1917</span><p>协和建筑群奠基</p></div>
+          <div><span>1921</span><p>建筑群正式落成</p></div>
+        </div>
+        <div class="building-key" aria-label="A至P楼名称索引">
+          <h3>A–P 楼名索引 <span>点楼号也可进入介绍</span></h3>
+          <div class="building-key-grid">
+            <a href="./heritage.html?place=A"><b>A</b> 壹号礼堂</a>
+            <a href="./heritage.html?place=B"><b>B</b> 原教学楼</a>
+            <a href="./heritage.html?place=C"><b>C</b> 原病理楼</a>
+            <a href="./heritage.html?place=D"><b>D</b> 原解剖楼</a>
+            <a href="./heritage.html?place=E"><b>E</b> 生理／生化</a>
+            <a href="./heritage.html?place=F"><b>F</b> 病房楼</a>
+            <a href="./heritage.html?place=G"><b>G</b> 病房楼</a>
+            <a href="./heritage.html?place=H"><b>H</b> 病房楼</a>
+            <a href="./heritage.html?place=I"><b>I</b> 原图书馆</a>
+            <a href="./heritage.html?place=J"><b>J</b> 动物实验楼</a>
+            <a href="./heritage.html?place=K"><b>K</b> 原行政楼</a>
+            <a href="./heritage.html?place=L"><b>L</b> 原宿舍</a>
+            <a href="./heritage.html?place=M"><b>M</b> 药房／药剂楼</a>
+            <a href="./heritage.html?place=N"><b>N</b> 动力楼</a>
+            <a href="./heritage.html?place=O"><b>O</b> 二期楼</a>
+            <a href="./heritage.html?place=P"><b>P</b> 二期楼</a>
+          </div>
+        </div>
+        <a class="plan-link" href="./老楼/百年前的协和空间规划图.jpg" target="_blank" rel="noreferrer">查看百年前的空间规划图 <span aria-hidden="true">↗</span></a>
+        <div class="map-bottom-links">
+          <a href="./people.html">瓦檐载医魂｜协和百年人物志 <span aria-hidden="true">↗</span></a>
+          <a href="./sources.html">查看资料与图片来源 <span aria-hidden="true">↗</span></a>
+        </div>
+      </aside>
+    </section>
+    <p class="heritage-source-note">A–P 楼名参照老楼总平面图，地图点位按卫星图可见建筑对应；建筑细部与具体房间请以院方资料为准。</p>
+  </main>
+
+  <script src="./old-building.js?v=4"></script>
+</body>
+</html>

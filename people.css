@@ -1,0 +1,78 @@
+.people-page { min-height: 100%; overflow-y: auto; }
+.people-main { width: min(1190px, 90%); height: auto; min-height: calc(100dvh - 108px); flex: 1 0 auto; margin: 0 auto; padding: 24px 0 34px; }
+.people-main .detail-breadcrumb { margin-bottom: 26px; }
+.people-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 310px); gap: 40px; align-items: end; margin-bottom: 28px; }
+.people-heading .eyebrow { margin-bottom: 12px; }
+.people-heading h1 { margin: 0; font-family: var(--serif); font-size: clamp(30px, 4vw, 45px); font-weight: 500; letter-spacing: .05em; }
+.people-heading h1 em { color: #9caa75; font-style: normal; }
+.people-lead { margin: 12px 0 0; color: #6c796d; font-family: var(--serif); font-size: 14px; }
+.people-intro { margin: 0 0 4px; color: #788071; font-family: var(--serif); font-size: 12px; line-height: 2; }
+.people-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.person-card { overflow: hidden; background: var(--white); border: 1px solid #e2e2d7; }
+.person-card-image { display: block; height: 190px; overflow: hidden; background: #e5e6dc; }
+.person-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.person-card-image:hover img { transform: scale(1.04); }
+.person-card-body { padding: 14px; }
+.person-card-body h2 { margin: 0; font-family: var(--serif); font-size: 19px; font-weight: 600; }
+.person-card-title { margin: 4px 0 10px; color: #78836f; font-size: 10px; }
+.person-card-summary { min-height: 56px; margin: 0 0 12px; color: #6d7569; font-family: var(--serif); font-size: 10px; line-height: 1.8; }
+.person-building-link { display: inline-flex; align-items: center; justify-content: center; min-height: 36px; padding: 7px 10px; border: 1px solid #cbd2bf; background: #f0f1e9; color: #435d45; font-size: 10px; font-weight: 600; transition: background .2s, border-color .2s; }
+.person-building-link:hover { border-color: #95a777; background: #e6eadb; }
+.person-card-more { display: block; margin-top: 11px; color: #71805f; font-size: 10px; }
+.people-closing-note { display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 13px; align-items: start; margin-top: 24px; padding: 19px 22px; border: 1px solid #dce0d3; background: #eceee4; }
+.people-closing-mark { display: grid; width: 32px; height: 32px; place-items: center; border: 1px solid #bac4a7; border-radius: 50%; color: #71845a; font-size: 15px; }
+.people-closing-note h2 { margin: 0 0 6px; color: #455c45; font-family: var(--serif); font-size: 15px; font-weight: 600; letter-spacing: .04em; }
+.people-closing-note p { max-width: 850px; margin: 0; color: #727b6e; font-family: var(--serif); font-size: 11px; line-height: 1.9; }
+.people-note { margin: 18px 0 0; color: #8a8f83; font-size: 9px; line-height: 1.8; }
+.person-detail { display: grid; grid-template-columns: minmax(260px, .78fr) minmax(0, 1.22fr); gap: 36px; align-items: start; }
+.person-detail-image { position: sticky; top: 18px; margin: 0; padding: 10px; background: #e9e9dd; }
+.person-detail-image img { display: block; width: 100%; max-height: 68dvh; object-fit: contain; background: #e1e2d7; }
+.person-detail-image figcaption { padding: 8px 2px 1px; color: #798071; font-size: 9px; line-height: 1.7; }
+.person-detail-copy { padding: 4px 0 24px; }
+.person-detail-copy .eyebrow { margin-bottom: 10px; }
+.person-detail-copy h1 { margin: 0; font-family: var(--serif); font-size: clamp(32px, 4vw, 46px); font-weight: 500; letter-spacing: .08em; }
+.person-detail-title { margin: 6px 0 14px; color: #6e7b68; font-size: 11px; }
+.person-detail-deck { margin: 0 0 21px; color: #788071; font-family: var(--serif); font-size: 14px; line-height: 1.9; }
+.person-detail-copy h2 { margin: 18px 0 7px; color: #405b45; font-family: var(--serif); font-size: 15px; font-weight: 600; }
+.person-detail-copy > p:not(.eyebrow):not(.person-detail-title):not(.person-detail-deck) { margin: 0; color: #636e62; font-family: var(--serif); font-size: 11px; line-height: 2.05; }
+.person-caveat { margin-top: 14px; padding: 12px 14px; border-left: 3px solid #b78a4d; background: #f1eadf; color: #765d3d; font-family: var(--serif); font-size: 10px; line-height: 1.9; }
+.person-sources { margin: 18px 0 14px; }
+.person-back-link { display: inline-block; margin-top: 11px; color: #70805f; font-size: 11px; }
+.people-page .page-footer { justify-content: space-between; }
+.people-page .page-footer a { color: #607659; font-size: 10px; }
+
+@media (max-width: 900px) {
+  .people-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .person-card-image { height: 220px; }
+}
+@media (max-width: 650px) {
+  .people-main { width: 91%; padding: 14px 0 24px; }
+  .people-main .detail-breadcrumb { margin-bottom: 16px; }
+  .people-heading { grid-template-columns: 1fr; gap: 8px; margin-bottom: 16px; }
+  .people-heading h1 { font-size: 27px; }
+  .people-heading .eyebrow { font-size: 7px; }
+  .people-lead { font-size: 11px; }
+  .people-intro { font-size: 10px; }
+  .people-grid { gap: 10px; }
+  .people-closing-note { grid-template-columns: 27px minmax(0, 1fr); gap: 9px; margin-top: 16px; padding: 13px 12px; }
+  .people-closing-mark { width: 25px; height: 25px; font-size: 12px; }
+  .people-closing-note h2 { font-size: 13px; }
+  .people-closing-note p { font-size: 10px; line-height: 1.8; }
+  .person-card-image { height: 145px; }
+  .person-card-body { padding: 10px; }
+  .person-card-body h2 { font-size: 16px; }
+  .person-card-title { min-height: 24px; font-size: 8px; }
+  .person-card-summary { min-height: 72px; font-size: 9px; }
+  .person-building-link { width: 100%; min-height: 34px; padding: 5px; font-size: 8px; }
+  .person-card-more { font-size: 9px; }
+  .person-detail { grid-template-columns: 1fr; gap: 14px; }
+  .person-detail-image { position: static; }
+  .person-detail-image img { max-height: 36dvh; }
+  .person-detail-copy h1 { font-size: 31px; }
+  .person-detail-deck { font-size: 12px; }
+  .person-detail-copy h2 { margin-top: 14px; }
+  .people-page .page-footer { gap: 8px; }
+  .top-nav .people-nav-link { min-height: 36px; gap: 1px; padding: 4px 7px; }
+  .top-nav .people-nav-link span { font-size: 6px; }
+  .top-nav .people-nav-link strong { font-size: 9px; }
+}
