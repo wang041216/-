@@ -47,6 +47,7 @@ const buildings = {
     image: "./老楼/修缮后的协和医学院壹号礼堂。新华社记者 杨湛菲 摄.jpg",
     caption: "修缮后的协和医学院壹号礼堂。新华社记者 杨湛菲 摄。",
     gallery: [
+      { src: "./礼堂.png", caption: "礼堂历史建筑影像。图片由网站提供，原始出处、摄影者及对应关系待核。" },
       { src: "./老楼/管风琴旧照.png", caption: "礼堂内的管风琴历史照片。图片来源：北京协和医学教育基金会。" },
       { src: "./老楼/王辰院校长来到管风琴所在的储藏室.png", caption: "修复工作启动前，管风琴部件仍在储藏室中。图片来源：北京协和医学教育基金会。" },
       { src: "./老楼/破损管风琴1.jpg", caption: "修复前的管风琴键盘与内部构件。图片来源：北京协和医学教育基金会。" },
@@ -118,6 +119,9 @@ const buildings = {
     fact: "建筑史研究记载 F 楼兼有医院行政与住院医生宿舍用途；暂缺可确认的单体照片。",
     image: "./老楼/老楼建筑总平面图.jpg",
     caption: "老楼建筑总平面图，作为 F 楼位置参照；并非 F 楼单体照片。",
+    gallery: [
+      { src: "./百年前的协和空间布局图.png", caption: "历史院区布局图。用于对照 F 楼位置，不是 F 楼单体照片；楼宇功能按所列建筑史研究整理。" }
+    ],
     sources: ["architectureStudy"]
   },
   G: {
@@ -170,6 +174,9 @@ const buildings = {
     fact: "建筑史研究将 J 楼记为门诊楼；当前缺少可确认的 J 楼单体照片。",
     image: "./老楼/老楼建筑总平面图.jpg",
     caption: "老楼建筑总平面图，用于 J 楼位置参照；并非 J 楼单体照片。",
+    gallery: [
+      { src: "./百年前的协和空间布局图.png", caption: "历史院区布局图。用于对照 J 楼门诊空间位置，不是 J 楼单体照片；楼宇功能按所列建筑史研究整理。" }
+    ],
     sources: ["architectureStudy", "outpatientMove"]
   },
   K: {
@@ -209,6 +216,9 @@ const buildings = {
     fact: "动力房服务于院区运转；具体设备信息参照建筑史研究，仍待档案细化。",
     image: "./老楼/老楼建筑总平面图.jpg",
     caption: "老楼建筑总平面图，作为 M 楼位置参照；并非 M 楼单体照片。",
+    gallery: [
+      { src: "./百年前的协和空间布局图.png", caption: "历史院区布局图。用于对照 M 楼动力设施位置，不是 M 楼单体照片；楼宇功能按所列建筑史研究整理。" }
+    ],
     sources: ["architectureStudy"]
   },
   N: {
@@ -222,6 +232,9 @@ const buildings = {
     fact: "建筑史研究将 N 楼用途记为动物房及仓库；具体设施和使用年代待档案核对。",
     image: "./老楼/老楼建筑总平面图.jpg",
     caption: "老楼建筑总平面图，作为 N 楼位置参照；并非 N 楼单体照片。",
+    gallery: [
+      { src: "./百年前的协和空间布局图.png", caption: "历史院区布局图。用于对照 N 楼动物房及仓库位置，不是 N 楼单体照片；楼宇功能按所列建筑史研究整理。" }
+    ],
     sources: ["architectureStudy"]
   },
   O: {
@@ -235,6 +248,9 @@ const buildings = {
     fact: "O 楼的楼层功能记录展现门诊、实验与住院医师生活空间的复合布局。",
     image: "./老楼/老楼建筑总平面图.jpg",
     caption: "老楼建筑总平面图，作为 O 楼位置参照；并非 O 楼单体照片。",
+    gallery: [
+      { src: "./百年前的协和空间布局图.png", caption: "历史院区布局图。用于对照 O 楼功能区位置，不是 O 楼单体照片；楼宇功能按所列建筑史研究整理。" }
+    ],
     sources: ["architectureStudy"]
   },
   P: {
@@ -248,6 +264,9 @@ const buildings = {
     fact: "P 楼历史用途参照建筑史研究；当前功能和感染控制要求以院方最新信息为准。",
     image: "./老楼/老楼建筑总平面图.jpg",
     caption: "老楼建筑总平面图，作为 P 楼位置参照；并非 P 楼单体照片。",
+    gallery: [
+      { src: "./百年前的协和空间布局图.png", caption: "历史院区布局图。用于对照 P 楼传染病诊疗空间位置，不是 P 楼单体照片；楼宇功能按所列建筑史研究整理。" }
+    ],
     sources: ["architectureStudy"]
   }
 };
@@ -341,12 +360,19 @@ if (!building) {
   navigation.append(next);
   copy.append(navigation);
 
-  const imageCard = makeElement("figure", "story-image-card");
+  const imageCard = makeElement("div", "story-image-card");
+  const mainFigure = makeElement("figure", "story-main-image");
   const image = document.createElement("img");
   image.src = building.image;
-  image.alt = building.name;
-  imageCard.append(image);
-  imageCard.append(makeElement("figcaption", "", building.caption));
+  image.alt = building.caption;
+  const imageLink = makeElement("a");
+  imageLink.href = building.image;
+  imageLink.target = "_blank";
+  imageLink.rel = "noreferrer";
+  imageLink.setAttribute("aria-label", `打开${building.name}配图原图`);
+  imageLink.append(image);
+  mainFigure.append(imageLink, makeElement("figcaption", "", building.caption));
+  imageCard.append(mainFigure);
 
   const sources = makeElement("div", "story-sources");
   building.sources.forEach((sourceId) => {
@@ -360,11 +386,18 @@ if (!building) {
   imageCard.append(sources);
   if (building.gallery) {
     building.gallery.forEach((item) => {
+      const galleryFigure = makeElement("figure", "story-gallery-item");
       const galleryImage = document.createElement("img");
       galleryImage.src = item.src;
       galleryImage.alt = item.caption;
-      imageCard.append(galleryImage);
-      imageCard.append(makeElement("figcaption", "", item.caption));
+      const galleryLink = makeElement("a");
+      galleryLink.href = item.src;
+      galleryLink.target = "_blank";
+      galleryLink.rel = "noreferrer";
+      galleryLink.setAttribute("aria-label", "打开图片原图");
+      galleryLink.append(galleryImage);
+      galleryFigure.append(galleryLink, makeElement("figcaption", "", item.caption));
+      imageCard.append(galleryFigure);
     });
   }
   imageCard.append(makeElement("p", "story-citation-note", "楼宇编号与历史功能参照所列建筑史研究；地图热点仅作位置示意。未经档案证实的具体房间和当前用途，以院方信息为准。"));
