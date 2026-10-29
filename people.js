@@ -46,7 +46,7 @@ const people = [
     buildingId: "I",
     image: "./老楼/协和人物/胡正祥.webp",
     imageAlt: "胡正祥肖像",
-    imageCaption: "胡正祥肖像。图片来源与授权待核。",
+    imageCaption: "胡正祥肖像。图片来源：百度百科；公开展示授权请以原页面说明为准。",
     summary: "在显微镜下辨认疾病，也在教学中建立观察、判断与求证的学科传统。",
     introduction: "胡正详是协和病理学发展史中的重要人物。协和的病理教学和诊断传统，依靠一代代医师对组织切片、病例材料与临床问题的严谨观察逐步建立。",
     story: "病理学的工作常常不为人所见：组织取材、制片、阅片和诊断，要求在细微结构中寻找证据。人物与 I 楼的关联，指向协和早期病理教学和研究的空间记忆；珍贵标本与教学材料也让这段历史能够被持续观察。",
@@ -85,7 +85,7 @@ const people = [
     buildingId: "C",
     image: "./老楼/协和人物/吴宪.webp",
     imageAlt: "吴宪肖像",
-    imageCaption: "吴宪肖像。图片来源与授权待核。",
+    imageCaption: "吴宪肖像。图片来源：百度百科；公开展示授权请以原页面说明为准。",
     summary: "把化学测量带入医学研究，生物化学由此成为理解生命与疾病的重要工具。",
     introduction: "吴宪是中国现代生物化学的重要奠基者之一，曾在协和主持生物化学教学与研究。他与 Otto Folin 合作提出的 Folin–Wu 血糖测定法，是临床生物化学史上的重要方法。",
     story: "早期生物化学研究需要把实验室里的定量测量与临床问题连接起来。吴宪参与建立的教学和研究基础，使生化检验成为认识代谢、分析疾病的重要路径。关于某一具体房间或“202 实验室”的说法，现有来源尚不能确认，因此本页不作具体地点断言。",
@@ -105,7 +105,7 @@ const people = [
     buildingId: "B",
     image: "./老楼/协和人物/步达生.webp",
     imageAlt: "步达生肖像",
-    imageCaption: "步达生肖像。图片来源与授权待核。",
+    imageCaption: "步达生肖像。图片来源：百度百科；公开展示授权请以原页面说明为准。",
     summary: "一颗来自周口店的牙齿，开启了北京人研究的一段重要篇章。",
     introduction: "步达生（Davidson Black）是加拿大解剖学家和古人类学家，曾在北京协和医学院任教。他依据周口店出土的牙齿化石，于 1927 年提出“北京中国猿人”的学名。",
     story: "从一枚牙齿化石出发，研究者需要细致比较解剖特征，并把发现放入人类演化的证据链中。步达生与协和解剖教学空间、北京人研究史的联系，让院区故事延伸到医学之外的科学探索。",
@@ -125,10 +125,11 @@ const people = [
     buildingId: null,
     image: "./老楼/协和人物/兰安生.webp",
     imageAlt: "兰安生肖像",
-    imageCaption: "兰安生肖像。图片来源与授权待核。",
+    imageCaption: "兰安生肖像。图片来源：百度百科；公开展示授权请以原页面说明为准。",
     summary: "把医学带到社区，让预防、卫生服务和公共健康成为一项系统工作。",
     introduction: "兰安生（John B. Grant）是协和公共卫生教育的重要先驱。1920 年代，他参与推动社区卫生服务和公共卫生实践，北平第一卫生事务所成为早期探索的重要项目。",
     story: "北平第一卫生事务所把卫生服务、预防工作和社区调查结合起来，也为公共卫生教育提供实践场景。它所代表的思路，是让医学不仅回应个体疾病，也关注社区环境和人群健康。",
+    storyTitle: "社区卫生实践",
     contribution: "他参与推动中国现代公共卫生教育与社区卫生实践的发展。",
     relation: "现有资料足以讲述其公共卫生教育与社区实践，但不足以确认其与 A–P 某一楼宇的直接空间关系，因此本导览不指定楼号。",
     sources: [
@@ -196,7 +197,7 @@ function renderPerson(person) {
   copy.append(element("p", "person-detail-deck", person.summary));
   copy.append(element("h2", "", "人物简介"));
   copy.append(element("p", "", person.introduction));
-  copy.append(element("h2", "", "老楼里的故事"));
+  copy.append(element("h2", "", person.storyTitle || "老楼里的故事"));
   copy.append(element("p", "", person.story));
   copy.append(element("h2", "", "医学贡献"));
   copy.append(element("p", "", person.contribution));
