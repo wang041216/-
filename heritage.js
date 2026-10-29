@@ -48,6 +48,7 @@ const buildings = {
     caption: "修缮后的协和医学院壹号礼堂。新华社记者 杨湛菲 摄。",
     gallery: [
       { src: "./礼堂.png", caption: "礼堂历史建筑影像。图片由网站提供，原始出处、摄影者及对应关系待核。" },
+      { src: "./老楼/建筑文档图片/A楼-文档照片.png", caption: "用户提供的《建筑.docx》中 A 楼（礼堂）条目所附历史影像；原始档案出处、摄影者及公开展示授权待核。" },
       { src: "./老楼/管风琴旧照.png", caption: "礼堂内的管风琴历史照片。图片来源：北京协和医学教育基金会。" },
       { src: "./老楼/王辰院校长来到管风琴所在的储藏室.png", caption: "修复工作启动前，管风琴部件仍在储藏室中。图片来源：北京协和医学教育基金会。" },
       { src: "./老楼/破损管风琴1.jpg", caption: "修复前的管风琴键盘与内部构件。图片来源：北京协和医学教育基金会。" },
@@ -80,6 +81,9 @@ const buildings = {
     fact: "建筑史研究记载 C 楼兼有校办公室与生物化学楼用途。",
     image: "./C楼（校办公室及生物化学楼）.png",
     caption: "C 楼（校办公室及生物化学楼）。图片由网站提供，原始摄影信息与授权待核。",
+    gallery: [
+      { src: "./老楼/建筑文档图片/C楼-文档照片.png", caption: "用户提供的《建筑.docx》中 C 楼条目所附历史影像；原始档案出处、摄影者及公开展示授权待核。" }
+    ],
     sources: ["architectureStudy", "institute"]
   },
   D: {
@@ -106,6 +110,9 @@ const buildings = {
     fact: "建筑史研究将 E 楼列为特别病房。",
     image: "./E楼（特别病房）.png",
     caption: "E 楼（特别病房）。图片由网站提供，原始摄影信息与授权待核。",
+    gallery: [
+      { src: "./老楼/建筑文档图片/E楼-文档照片.png", caption: "用户提供的《建筑.docx》中 E 楼（特别病房）条目所附历史影像；原始档案出处、摄影者及公开展示授权待核。" }
+    ],
     sources: ["architectureStudy"]
   },
   F: {
@@ -135,6 +142,9 @@ const buildings = {
     fact: "建筑史研究将 G 楼记为外科病房；曾宪九人物页提供外科史的延伸阅读。",
     image: "./G、H楼.png",
     caption: "G、H 楼建筑照片。图片由网站提供，无法仅凭合照确认单体对应及拍摄信息。",
+    gallery: [
+      { src: "./老楼/建筑文档图片/G-H楼-文档合照.png", caption: "《建筑.docx》标注 G 楼在左、H 楼在右的历史合照；原始档案出处、摄影者及公开展示授权待核。" }
+    ],
     sources: ["architectureStudy"]
   },
   H: {
@@ -148,6 +158,9 @@ const buildings = {
     fact: "建筑史研究将 H 楼记为内科病房；张孝骞人物资料可供了解相关临床传统。",
     image: "./G、H楼.png",
     caption: "G、H 楼建筑照片。图片由网站提供，无法仅凭合照确认单体对应及拍摄信息。",
+    gallery: [
+      { src: "./老楼/建筑文档图片/G-H楼-文档合照.png", caption: "《建筑.docx》标注 G 楼在左、H 楼在右的历史合照；原始档案出处、摄影者及公开展示授权待核。" }
+    ],
     sources: ["architectureStudy"]
   },
   I: {
@@ -161,6 +174,9 @@ const buildings = {
     fact: "建筑史研究记载 I 楼包含病理、微生物、寄生虫学及检验等空间。",
     image: "./I楼.png",
     caption: "I 楼。图片由网站提供，原始摄影信息与授权待核。",
+    gallery: [
+      { src: "./老楼/建筑文档图片/I楼-文档照片.png", caption: "用户提供的《建筑.docx》中 I 楼条目所附历史影像；原始档案出处、摄影者及公开展示授权待核。" }
+    ],
     sources: ["architectureStudy", "institute"]
   },
   J: {
@@ -169,7 +185,7 @@ const buildings = {
     deck: "从门诊空间看医院如何组织接诊、检查、放射学与临床工作。",
     sections: [
       { title: "门诊与诊断功能", text: "建筑史研究将 J 楼记为门诊楼，包含各科门诊、科室办公室及实验室，并设放射学科和手术室等功能。它体现门诊诊疗与检查、治疗空间在院区中的组织关系。" },
-      { title: "和后来的门诊建筑区分", text: "此处所说 J 楼是建筑史研究中的老楼编号，不应与后续建成的门诊楼混为一谈。新旧楼的年代、用途和位置需结合院区图纸辨认。" }
+      { title: "和后来的门诊建筑区分", text: "此处所说 J 楼是建筑史研究中的老楼编号，不是 1975 年奠基、1978 年开诊的后期门诊楼。两者年代、用途和位置不同。" }
     ],
     fact: "建筑史研究将 J 楼记为门诊楼；当前缺少可确认的 J 楼单体照片。",
     image: "./老楼/老楼建筑总平面图.jpg",
@@ -190,6 +206,9 @@ const buildings = {
     fact: "建筑史研究所列 K 楼功能包括妇儿病房、急诊、住院、药房及病案等。",
     image: "./K楼.png",
     caption: "K 楼。图片由网站提供，原始摄影信息与授权待核。",
+    gallery: [
+      { src: "./老楼/建筑文档图片/K楼-文档照片.png", caption: "用户提供的《建筑.docx》中 K 楼条目所附历史影像；原始档案出处、摄影者及公开展示授权待核。" }
+    ],
     sources: ["architectureStudy"]
   },
   L: {
@@ -203,6 +222,9 @@ const buildings = {
     fact: "建筑史研究记录 L 楼由护士楼改作图书馆。",
     image: "./L楼.png",
     caption: "L 楼。图片由网站提供，原始摄影信息与授权待核。",
+    gallery: [
+      { src: "./老楼/建筑文档图片/L楼-文档照片.png", caption: "用户提供的《建筑.docx》中 L 楼条目所附历史影像；原始档案出处、摄影者及公开展示授权待核。" }
+    ],
     sources: ["architectureStudy"]
   },
   M: {
@@ -326,6 +348,14 @@ if (!building) {
     copy.append(makeElement("h2", "", section.title));
     copy.append(makeElement("p", "", section.text));
   });
+  if (id === "J") {
+    const laterOutpatient = makeElement("a", "building-history-crosslink", "查找 1978 年门诊楼与后续门诊发展 →");
+    laterOutpatient.href = "./campus-building.html?place=outpatient";
+    copy.append(laterOutpatient);
+    const fullHistory = makeElement("a", "building-history-crosslink", "阅读建筑史与院区沿革 →");
+    fullHistory.href = "./building-history.html#outpatient";
+    copy.append(fullHistory);
+  }
   const fact = makeElement("aside", "building-fact");
   fact.append(makeElement("span", "", "留一条线索"));
   fact.append(makeElement("p", "", building.fact));

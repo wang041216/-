@@ -85,6 +85,50 @@
 .early-building-image figcaption { padding: 7px 2px 1px; color: #788071; font-size: 8px; line-height: 1.7; }
 .early-buildings-source { margin: 16px 0 0; color: #898f82; font-family: var(--serif); font-size: 9px; line-height: 1.8; }
 .early-buildings-source a { color: #536d52; text-decoration: underline; text-underline-offset: 2px; }
+.building-history-page .heritage-detail-main { padding-bottom: 48px; }
+.building-history-heading { max-width: 860px; margin-bottom: 32px; }
+.building-history-heading .eyebrow { margin-bottom: 9px; }
+.building-history-heading h1 { margin: 0; color: #334d3d; font-family: var(--serif); font-size: clamp(30px, 4vw, 42px); font-weight: 500; letter-spacing: .06em; }
+.building-history-heading > p:not(.eyebrow) { margin: 11px 0 0; color: #6f786b; font-family: var(--serif); font-size: 12px; line-height: 2; }
+.building-history-section { margin: 0 0 40px; scroll-margin-top: 20px; }
+.building-history-section > .section-kicker { margin-bottom: 6px; }
+.building-history-section > h2 { margin: 0 0 13px; color: #405b45; font-family: var(--serif); font-size: 24px; font-weight: 500; }
+.building-history-section > p:not(.section-kicker) { color: #5f6b5e; font-family: var(--serif); font-size: 11px; line-height: 2; }
+.building-history-section a, .building-history-source a { color: #536d52; text-decoration: underline; text-underline-offset: 2px; }
+.building-history-timeline { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+.building-history-timeline li { display: grid; grid-template-columns: 125px minmax(0, 1fr); gap: 18px; padding: 17px 0; border-top: 1px solid #dfe2d7; }
+.building-history-timeline time { color: #637a59; font-family: var(--serif); font-size: 14px; }
+.building-history-timeline h3, .building-history-callout h3, .building-history-people h3 { margin: 0 0 6px; color: #405b45; font-family: var(--serif); font-size: 15px; font-weight: 600; }
+.building-history-timeline p, .building-history-callout p, .building-history-people p { margin: 0 0 6px; color: #626d60; font-family: var(--serif); font-size: 10px; line-height: 1.9; }
+.building-history-callout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 14px 0; }
+.building-history-callout article { padding: 15px; border: 1px solid #e0e1d7; background: rgba(255, 254, 249, .7); }
+.building-history-callout article a, .building-history-timeline a, .building-history-people a { font-size: 9px; }
+.building-history-index { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 15px; }
+.building-history-index > a { display: flex; min-width: 0; gap: 10px; align-items: flex-start; padding: 10px; border: 1px solid #e0e1d7; background: rgba(255, 254, 249, .7); text-decoration: none; }
+.building-history-index > a > b { display: grid; width: 25px; height: 25px; flex: 0 0 auto; place-items: center; background: #e8ecd9; color: #506347; font-size: 10px; }
+.building-history-index > a span { min-width: 0; }
+.building-history-index strong, .building-history-index small { display: block; }
+.building-history-index strong { color: #455e46; font-family: var(--serif); font-size: 10px; font-weight: 600; }
+.building-history-index small { margin-top: 3px; color: #81867a; font-size: 8px; line-height: 1.7; }
+.building-history-crosslink { display: block; width: fit-content; margin-top: 8px; color: #536d52; font-size: 10px; text-decoration: underline; text-underline-offset: 3px; }
+.building-history-note { padding: 11px 13px; background: #eeefe5; color: #737a6e !important; font-size: 9px !important; }
+.building-history-people { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 13px; }
+.building-history-people article { padding: 13px; border: 1px solid #e0e1d7; background: rgba(255, 254, 249, .7); }
+.building-history-source { margin-top: 25px; padding: 16px; border: 1px solid #dfe2d7; background: #eeefe5; color: #687365; }
+.building-history-source strong { color: #405b45; font-family: var(--serif); font-size: 12px; }
+.building-history-source p { margin: 7px 0 0; font-family: var(--serif); font-size: 9px; line-height: 1.9; }
+@media (max-width: 680px) {
+  .building-history-heading { margin-bottom: 24px; }
+  .building-history-section { margin-bottom: 30px; }
+  .building-history-section > h2 { font-size: 20px; }
+  .building-history-timeline li { grid-template-columns: 1fr; gap: 5px; padding: 13px 0; }
+  .building-history-timeline time { font-size: 12px; }
+  .building-history-callout, .building-history-index { grid-template-columns: 1fr; }
+  .building-history-people { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 390px) {
+  .building-history-people { grid-template-columns: 1fr; }
+}
 .early-campus-plans { margin-top: 24px; }
 .early-campus-plans h2 { margin: 0; color: #405b45; font-family: var(--serif); font-size: 19px; font-weight: 500; }
 .early-campus-plans > p { margin: 7px 0 12px; color: #788072; font-family: var(--serif); font-size: 10px; line-height: 1.8; }
