@@ -48,7 +48,7 @@ const buildings = {
     caption: "修缮后的协和医学院壹号礼堂。新华社记者 杨湛菲 摄。",
     gallery: [
       { src: "./礼堂.png", caption: "礼堂历史建筑影像。图片由网站提供，原始出处、摄影者及对应关系待核。" },
-      { src: "./老楼/建筑文档图片/A楼-文档照片.png", caption: "用户提供的《建筑.docx》中 A 楼（礼堂）条目所附历史影像；原始档案出处、摄影者及公开展示授权待核。" },
+      { src: "./老楼/建筑历史影像/A楼-历史影像.png", caption: "A 楼礼堂历史影像；原始档案出处、摄影者及公开展示授权待核。" },
       { src: "./老楼/管风琴旧照.png", caption: "礼堂内的管风琴历史照片。图片来源：北京协和医学教育基金会。" },
       { src: "./老楼/王辰院校长来到管风琴所在的储藏室.png", caption: "修复工作启动前，管风琴部件仍在储藏室中。图片来源：北京协和医学教育基金会。" },
       { src: "./老楼/破损管风琴1.jpg", caption: "修复前的管风琴键盘与内部构件。图片来源：北京协和医学教育基金会。" },
@@ -82,7 +82,7 @@ const buildings = {
     image: "./C楼（校办公室及生物化学楼）.png",
     caption: "C 楼（校办公室及生物化学楼）。图片由网站提供，原始摄影信息与授权待核。",
     gallery: [
-      { src: "./老楼/建筑文档图片/C楼-文档照片.png", caption: "用户提供的《建筑.docx》中 C 楼条目所附历史影像；原始档案出处、摄影者及公开展示授权待核。" }
+      { src: "./老楼/建筑历史影像/C楼-历史影像.png", caption: "C 楼校办公室及生物化学楼历史影像；原始档案出处、摄影者及公开展示授权待核。" }
     ],
     sources: ["architectureStudy", "institute"]
   },
@@ -111,7 +111,7 @@ const buildings = {
     image: "./E楼（特别病房）.png",
     caption: "E 楼（特别病房）。图片由网站提供，原始摄影信息与授权待核。",
     gallery: [
-      { src: "./老楼/建筑文档图片/E楼-文档照片.png", caption: "用户提供的《建筑.docx》中 E 楼（特别病房）条目所附历史影像；原始档案出处、摄影者及公开展示授权待核。" }
+      { src: "./老楼/建筑历史影像/E楼-历史影像.png", caption: "E 楼特别病房历史影像；原始档案出处、摄影者及公开展示授权待核。" }
     ],
     sources: ["architectureStudy"]
   },
@@ -121,7 +121,7 @@ const buildings = {
     deck: "医院行政与住院医生宿舍并置，展现医疗工作背后的管理与生活空间。",
     sections: [
       { title: "医疗服务与日常生活", text: "建筑史研究将 F 楼用途记为医院行政及住院医生宿舍。医院的诊疗活动依赖管理组织，也依赖医师值班、休息和学习的日常空间；两类功能并置，让楼宇故事超越单一临床科室。" },
-      { title: "档案仍待补充", text: "现阶段没有随文档提供 F 楼单体照片。页面以总平面图作位置参照，不把相邻建筑照片误作 F 楼，也不推断其当前用途。" }
+      { title: "影像与楼名的对应", text: "目前没有可确认的 F 楼单体照片。页面以总平面图作位置参照，不把相邻建筑照片误作 F 楼，也不推断其当前用途。" }
     ],
     fact: "建筑史研究记载 F 楼兼有医院行政与住院医生宿舍用途；暂缺可确认的单体照片。",
     image: "./老楼/老楼建筑总平面图.jpg",
@@ -143,7 +143,7 @@ const buildings = {
     image: "./G、H楼.png",
     caption: "G、H 楼建筑照片。图片由网站提供，无法仅凭合照确认单体对应及拍摄信息。",
     gallery: [
-      { src: "./老楼/建筑文档图片/G-H楼-文档合照.png", caption: "《建筑.docx》标注 G 楼在左、H 楼在右的历史合照；原始档案出处、摄影者及公开展示授权待核。" }
+      { src: "./老楼/建筑历史影像/G-H楼-历史合照.png", caption: "G 楼、H 楼历史合照，图中 G 楼在左、H 楼在右；原始档案出处、摄影者及公开展示授权待核。" }
     ],
     sources: ["architectureStudy"]
   },
@@ -159,7 +159,7 @@ const buildings = {
     image: "./G、H楼.png",
     caption: "G、H 楼建筑照片。图片由网站提供，无法仅凭合照确认单体对应及拍摄信息。",
     gallery: [
-      { src: "./老楼/建筑文档图片/G-H楼-文档合照.png", caption: "《建筑.docx》标注 G 楼在左、H 楼在右的历史合照；原始档案出处、摄影者及公开展示授权待核。" }
+      { src: "./老楼/建筑历史影像/G-H楼-历史合照.png", caption: "G 楼、H 楼历史合照，图中 G 楼在左、H 楼在右；原始档案出处、摄影者及公开展示授权待核。" }
     ],
     sources: ["architectureStudy"]
   },
@@ -175,7 +175,7 @@ const buildings = {
     image: "./I楼.png",
     caption: "I 楼。图片由网站提供，原始摄影信息与授权待核。",
     gallery: [
-      { src: "./老楼/建筑文档图片/I楼-文档照片.png", caption: "用户提供的《建筑.docx》中 I 楼条目所附历史影像；原始档案出处、摄影者及公开展示授权待核。" }
+      { src: "./老楼/建筑历史影像/I楼-历史影像.png", caption: "I 楼病理学楼历史影像；原始档案出处、摄影者及公开展示授权待核。" }
     ],
     sources: ["architectureStudy", "institute"]
   },
@@ -207,7 +207,7 @@ const buildings = {
     image: "./K楼.png",
     caption: "K 楼。图片由网站提供，原始摄影信息与授权待核。",
     gallery: [
-      { src: "./老楼/建筑文档图片/K楼-文档照片.png", caption: "用户提供的《建筑.docx》中 K 楼条目所附历史影像；原始档案出处、摄影者及公开展示授权待核。" }
+      { src: "./老楼/建筑历史影像/K楼-历史影像.png", caption: "K 楼历史影像；原始档案出处、摄影者及公开展示授权待核。" }
     ],
     sources: ["architectureStudy"]
   },
@@ -223,7 +223,7 @@ const buildings = {
     image: "./L楼.png",
     caption: "L 楼。图片由网站提供，原始摄影信息与授权待核。",
     gallery: [
-      { src: "./老楼/建筑文档图片/L楼-文档照片.png", caption: "用户提供的《建筑.docx》中 L 楼条目所附历史影像；原始档案出处、摄影者及公开展示授权待核。" }
+      { src: "./老楼/建筑历史影像/L楼-历史影像.png", caption: "L 楼护士楼／图书馆历史影像；原始档案出处、摄影者及公开展示授权待核。" }
     ],
     sources: ["architectureStudy"]
   },
@@ -352,8 +352,8 @@ if (!building) {
     const laterOutpatient = makeElement("a", "building-history-crosslink", "查找 1978 年门诊楼与后续门诊发展 →");
     laterOutpatient.href = "./campus-building.html?place=outpatient";
     copy.append(laterOutpatient);
-    const fullHistory = makeElement("a", "building-history-crosslink", "阅读建筑史与院区沿革 →");
-    fullHistory.href = "./building-history.html#outpatient";
+    const fullHistory = makeElement("a", "building-history-crosslink", "了解协和历史发展 →");
+    fullHistory.href = "./building-history.html#campus";
     copy.append(fullHistory);
   }
   const fact = makeElement("aside", "building-fact");

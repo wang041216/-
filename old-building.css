@@ -192,7 +192,8 @@
   .heritage-hotspot { width: 22px; height: 22px; font-size: 8px; }
   .heritage-map-caption { font-size: 7px; }
   .heritage-intro { overflow: hidden; padding: 5px 5px 0; }
-  .heritage-intro .section-kicker, .heritage-intro > p { display: none; }
+  .heritage-intro .section-kicker, .heritage-intro > p:not(.architecture-note) { display: none; }
+  .heritage-intro > p.architecture-note { display: block; margin-top: 2px; padding: 4px 6px; font-size: 8px; line-height: 1.45; }
   .heritage-intro h2 { margin: 0 0 5px; font-size: 18px; line-height: 1.35; }
   .building-key { min-height: 0; margin-top: 3px; }
   .building-key-grid { gap: 1px 5px; }

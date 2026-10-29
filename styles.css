@@ -147,13 +147,13 @@ main { width: min(1190px, 87.5%); margin: 0 auto; }
 .satellite-note { margin: 9px 1px 0; color: #7b8174; font-size: 9px; }
 
 .detail-column { padding-top: 2px; }
-.detail-heading { display: flex; justify-content: space-between; align-items: center; padding: 2px 1px 12px; }
-.detail-heading-actions { display: flex; align-items: center; gap: 9px; }
-.people-entry-link { display: flex; min-height: 52px; min-width: 174px; flex-direction: column; justify-content: center; gap: 3px; padding: 7px 14px; border: 1px solid #a6b386; background: #edf0e4; color: #344f3c; box-shadow: 0 2px 8px rgba(25, 57, 46, .09); transition: background .2s, border-color .2s, transform .2s; }
-.people-entry-link:hover { transform: translateY(-1px); border-color: #879969; background: #e1e8d1; }
-.people-entry-link > span { color: #7b895e; font-size: 9px; letter-spacing: .14em; }
-.people-entry-link strong { font-family: var(--serif); font-size: 15px; font-weight: 600; letter-spacing: .04em; white-space: nowrap; }
-.people-entry-link i { padding-left: 5px; color: #829263; font-family: var(--sans); font-size: 12px; font-style: normal; }
+.detail-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 2px 1px 12px; }
+.detail-heading-actions { display: flex; flex: 1 1 100%; align-items: center; gap: 9px; }
+.people-entry-link, .history-entry-link { display: flex; min-height: 52px; min-width: 0; flex: 1; flex-direction: column; justify-content: center; gap: 3px; padding: 7px 10px; border: 1px solid #a6b386; background: #edf0e4; color: #344f3c; box-shadow: 0 2px 8px rgba(25, 57, 46, .09); transition: background .2s, border-color .2s, transform .2s; }
+.people-entry-link:hover, .history-entry-link:hover { transform: translateY(-1px); border-color: #879969; background: #e1e8d1; }
+.people-entry-link > span, .history-entry-link > span { color: #7b895e; font-size: 9px; letter-spacing: .14em; }
+.people-entry-link strong, .history-entry-link strong { font-family: var(--serif); font-size: 15px; font-weight: 600; letter-spacing: .04em; white-space: nowrap; }
+.people-entry-link i, .history-entry-link i { padding-left: 5px; color: #829263; font-family: var(--sans); font-size: 12px; font-style: normal; }
 .detail-count { color: #6f8060; font-size: 10px; letter-spacing: .1em; }
 .detail-count i { color: #a1a395; font-style: normal; }
 .detail-card { padding: 20px 21px 15px; border: 1px solid #dcddd2; background: rgba(255, 254, 249, .58); }
@@ -265,9 +265,9 @@ main { width: 100%; height: calc(100dvh - 108px); min-height: 0; margin: 0; padd
 .satellite-note { flex: 0 0 auto; margin-bottom: 0; }
 .detail-column { display: flex; min-height: 0; flex-direction: column; padding-top: 0; }
 .detail-heading { flex: 0 0 auto; padding: 2px 1px 10px; }
-.people-entry-link { min-height: 46px; min-width: 154px; padding: 5px 10px; }
-.people-entry-link > span { font-size: 8px; }
-.people-entry-link strong { font-size: 13px; }
+.people-entry-link, .history-entry-link { min-height: 46px; padding: 5px 8px; }
+.people-entry-link > span, .history-entry-link > span { font-size: 8px; }
+.people-entry-link strong, .history-entry-link strong { font-size: 13px; }
 .detail-card { flex: 0 0 auto; padding: 20px; }
 .detail-card.is-welcome .detail-rule,
 .detail-card.is-welcome h3,
@@ -302,9 +302,9 @@ main { width: 100%; height: calc(100dvh - 108px); min-height: 0; margin: 0; padd
   .detail-column { position: fixed; z-index: 5; right: 4%; bottom: 12px; left: 4%; max-height: 39dvh; padding: 10px; overflow-y: auto; border: 1px solid #dcddd2; background: rgba(245, 243, 236, .97); box-shadow: 0 7px 28px rgba(24, 48, 36, .17); }
   .detail-heading { padding: 0 1px 7px; }
   .detail-heading-actions { gap: 7px; }
-  .people-entry-link { min-width: 143px; min-height: 42px; padding: 4px 8px; }
-  .people-entry-link > span { font-size: 7px; }
-  .people-entry-link strong { font-size: 12px; }
+  .people-entry-link, .history-entry-link { min-height: 42px; padding: 4px 8px; }
+  .people-entry-link > span, .history-entry-link > span { font-size: 7px; }
+  .people-entry-link strong, .history-entry-link strong { font-size: 12px; }
   .detail-count { font-size: 8px; }
   .detail-card, .detail-card.is-welcome { margin: 0; padding: 12px; }
   .detail-card h2 { margin: 8px 0 4px; font-size: 19px; }
