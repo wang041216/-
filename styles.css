@@ -209,10 +209,12 @@ main { width: min(1190px, 87.5%); margin: 0 auto; }
   .brand small { font-size: 6px; }
   .top-nav { display: flex; gap: 6px; margin-left: 8px; }
   .top-nav a { font-size: 8px; }
-  .top-nav > a:not(.people-nav-link):not(.history-nav-link) { display: none; }
+  .top-nav > a:not(.people-nav-link):not(.history-nav-link):not(.source-nav-link) { display: none; }
   .top-nav .people-nav-link, .top-nav .history-nav-link { min-height: 36px; gap: 1px; padding: 4px 7px; }
   .top-nav .people-nav-link span, .top-nav .history-nav-link span { font-size: 6px; }
   .top-nav .people-nav-link strong, .top-nav .history-nav-link strong { font-size: 9px; }
+  .top-nav .source-nav-link { font-size: 7px; white-space: nowrap; }
+  .brand small { display: none; }
   .official-link { font-size: 9px; }
   main { width: 91%; }
   .intro { padding: 48px 0 30px; }
