@@ -215,7 +215,8 @@
   .story-deck { margin-bottom: 11px; font-size: 11px; }
   .story-copy h2 { margin: 12px 0 4px; font-size: 13px; }
   .story-copy p { font-size: 10px; }
-  .story-image-card { grid-row: 1; }
+  .story-copy { grid-row: 1; }
+  .story-image-card { grid-row: 2; }
   .story-image-card img { max-height: 36dvh; object-fit: contain; }
   .story-sources { grid-template-columns: 1fr; gap: 6px; }
   .story-sources a { min-height: 40px; font-size: 10px; }
