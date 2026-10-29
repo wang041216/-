@@ -1,20 +1,20 @@
 const buildings = [
   { id: "A", name: "壹号礼堂", position: [50.4, 90.4] },
-  { id: "B", name: "原教学楼", position: [30.8, 71.5] },
-  { id: "C", name: "原病理楼", position: [50.0, 62.8] },
-  { id: "D", name: "原解剖楼", position: [70.0, 71.6] },
-  { id: "E", name: "生理／生化楼", position: [15.0, 56.6] },
-  { id: "F", name: "病房楼 F", position: [14.3, 38.4] },
-  { id: "G", name: "病房楼 G", position: [39.6, 40.4] },
-  { id: "H", name: "病房楼 H", position: [62.3, 40.5] },
-  { id: "I", name: "原图书馆", position: [76.4, 28.8] },
-  { id: "J", name: "原动物实验楼", position: [50.4, 28.8] },
-  { id: "K", name: "原行政楼", position: [29.2, 27.9] },
-  { id: "L", name: "原宿舍", position: [15.3, 13.4] },
-  { id: "M", name: "药房／药剂楼", position: [92.3, 10.7] },
-  { id: "N", name: "动力楼", position: [90.6, 31.8] },
-  { id: "O", name: "二期 O 楼", position: [42.6, 15.8] },
-  { id: "P", name: "二期 P 楼", position: [39.6, 6.8] }
+  { id: "B", name: "解剖学楼", position: [30.8, 71.5] },
+  { id: "C", name: "校办公室及生物化学楼", position: [50.0, 62.8] },
+  { id: "D", name: "生理学、药理学楼", position: [70.0, 71.6] },
+  { id: "E", name: "特别病房", position: [15.0, 56.6] },
+  { id: "F", name: "医院行政及住院医生宿舍", position: [14.3, 38.4] },
+  { id: "G", name: "外科病房", position: [39.6, 40.4] },
+  { id: "H", name: "内科病房", position: [62.3, 40.5] },
+  { id: "I", name: "病理学楼", position: [76.4, 28.8] },
+  { id: "J", name: "门诊楼", position: [50.4, 28.8] },
+  { id: "K", name: "妇科、总务及儿科病房", position: [29.2, 27.9] },
+  { id: "L", name: "护士楼／图书馆", position: [15.3, 13.4] },
+  { id: "M", name: "动力房", position: [92.3, 10.7] },
+  { id: "N", name: "动物房及仓库", position: [90.6, 31.8] },
+  { id: "O", name: "专科门诊及住院医师宿舍", position: [42.6, 15.8] },
+  { id: "P", name: "传染病楼", position: [39.6, 6.8] }
 ];
 
 const layer = document.querySelector("#heritageHotspots");
